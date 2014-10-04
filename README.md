@@ -18,9 +18,9 @@ All set!
 ![Alibaba and the fourty thieves](http://i.imgur.com/1tpIohz.jpg)
 
 ###Customizing the Project
-You can customized all the variables of the project by tweaking the `conf.ini` file.
+You can customize all the variables of the project by tweaking the `conf.ini` file.
 
-Every time, the Twitter user whose credential is used in this project receives a direct message, the program does one of the three things:
+Everytime the Twitter user whose credential is used in this project receives a direct message, the program does one of the three things:
 
 1. If message incoming message **exactly the same** as the "keyword"[1], "a pin"[2] is sent HIGH/ON signal for "some time"[3]. A "welcome message"[4] is send to the sender.
 2. If the incoming message matches "a regular expression"[5], the sender is replied with "a tease reply"[6], which is usually a sarcastic comment.
@@ -29,23 +29,23 @@ Every time, the Twitter user whose credential is used in this project receives a
 All the information is logged in a "log file"[8] and you can decide the "verbosity"[9] of the log file.
 
 
-[1] **keyword:** This is essentity the magic word that is needed to be sent to the door as a direct message(DM) to open it. Default is "Open sesame". You can change it to any message to work as open command. Make sure it is not so complicated that you forget it or cannot type on your phone and lock yourself out. That will be a shame.
+[1] **keyword:** This is essentity the magic word that is needed to be sent to the door as a direct message(DM) to open it. Default is `open sesame`. You can change it to any message to work as open command. Make sure it is not so complicated that you forget it or cannot type on your phone and lock yourself out. That will be a shame.
 
-[2] **relay pin:** Set the _physical_ pin number on your Raspberry Pi that is connected to the relay or whatever external apparatus that you have deviced to open the door. When the magic words (the keyword) is sent as DM this pin is set to HIGH/ON/+5v. Default pin is pin #12.
+[2] **relay pin:** Set the _physical_ pin number on your Raspberry Pi that is connected to the relay or whatever external apparatus that you have deviced to open the door. When the magic words (the keyword) is sent as DM this pin is set to HIGH/ON/+5v. Default pin is pin #`12`.
 
-[3] **open_duration_sec:** Pin stays on for this many seconds on receipt of the keyword. The unit is seconds. The default "ON" duration is 20 seconds.
+[3] **open_duration_sec:** Pin stays on for this many seconds on receipt of the keyword. The unit is seconds. The default "ON" duration is `20` seconds.
 
-[4] **welcome_msg:** This message is send as a response of successfully opening the door. The default welcoming message is a _welcoming message_ that you wanted to put. You can do fun stuffs like sense the temperature and tell the visitor that temperature is 42 degree celcius inside and to take off his jacket before entering. But the default messages is, "Welcome to the cavern, my lord. This is your servent Humbledoor."
+[4] **welcome_msg:** This message is send as a response of successfully opening the door. A welcoming message is a _welcoming message_ that you wanted to welcome your guest with. You can do fun stuffs like sense the temperature and tell the visitor that temperature is 42 degree celcius inside and to take his or her jacket off before entering. But the default messages is, `Welcome to the cavern, my lord. This is your servent Humbledoor.`
 
-[5] **tease_on:** This is a regular expression. If anyone sends a DM that matches to this regular expression (case insensitive) is replied with the text set as teaser_text variable. The defaut is "^open", so anything that starts with "open" but is not the keyword, is replied with teaser_text. So, "Open Barley" is not a good idea.
+[5] **tease_on:** This is a regular expression. If anyone sends a DM that matches to this regular expression (case insensitive) is replied with the text set as teaser_text variable. The defaut is `^open`, so anything that starts with "open" but is not the keyword, is replied with the teaser_text. So, "Open Barley" is not a good idea.
 
-[6] **teaser_text:** A teaser text is, usually, a sarcasmic reply from the door to make a fun experience. The default teaser text is "Is it you, Kasim?", because you know it is Kasim, in the Alibaba story who forgot the keyword, and started trying different grain names but sesame. Please try to not be offensive with because you know, with great power comes great responsibility.
+[6] **teaser_text:** A teaser text is, usually, a sarcasmic reply from the door to make a fun experience. The default teaser text is `Is it you, Kasim?`, because you know it is Kasim, in the Alibaba story he is the guy who forgot the keyword, and started trying different grain names but sesame. Please try to not be offensive with because you know, _with great power comes great responsibility_.
 
-[7] **ffwd_msg:** Forward message is a message which is like saying I will convey your message. Or just some helpful response like, "Hey, this is Derpina's door. If you wanted to meet her or open her door, call her maybe." But the default is a boring reply: "Hey,You have reached to Humbledoor. I will forward your message to my master. Thanks."
+[7] **ffwd_msg:** Forward message is a message which is like saying I will convey your message. Or just some helpful response like, "Hey, this is Derpina's door. If you wanted to meet her or open her door, _call her maybe_." But the default is a boring reply: `Hey,You have reached to Humbledoor. I will forward your message to my master. Thanks.`
 
 [8] **log_dir:** is the directory when application log is stored. By default it is saved in `logs` directory in the main directory.
 
-[9] **log_level:** there are only a couple of logs in the script. But you can control what you wanted to see in the log by setting this value to any of the following: debug, info, warning, error, critical. The default is "debug"
+[9] **log_level:** there are only a couple of logs in the script. But you can control what you wanted to see in the log by setting this value to any of the following: debug, info, warning, error, critical. The default is `debug`
 
 ###Twitter Credentials
 
