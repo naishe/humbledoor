@@ -6,24 +6,14 @@ import json
 import RPi.GPIO as GPIO
 import time
 from threading import Thread
+import os
 
 tweepy.debug(True)
 
-#Initial setup
-PIN_RELAY1 = 12
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(PIN_RELAY1, GPIO.OUT, initial = GPIO.LOW)
-
-consumer_key="2Mq84pOASGtEK2YPYHdSKfSxC"
-consumer_secret="9BzNCelaVdUeLnwW6CS8sWdySLiDsd70WKAQpABU6wiuuWnwen"
-
-access_token="30669639-5SD0mc6lH3Yq1THmD5RrrSJoPhVALumsbT2w4DETm"
-access_token_secret="hoyHxIbinqn5zasyyPgzr2MPqRAqm2xot4U564opNsK7q"
 
 #Globals
 api = None
 username = None
-#global is_door_open
 
 class OpenSesame (StreamListener):
   is_door_open = False
@@ -76,6 +66,13 @@ class OpenSesame (StreamListener):
 
 
 if __name__ == "__main__":
+
+  #initial config
+  
+  # Initial setup
+  GPIO.setmode(GPIO.BOARD)
+  GPIO.setup(PIN_RELAY1, GPIO.OUT, initial = GPIO.LOW)
+
   l = OpenSesame()
   auth = OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_token, access_token_secret)
