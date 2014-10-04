@@ -6,7 +6,7 @@ This is a simple internet of things (IoT) project that opens the door if you sen
 ###Quick Start
 
 1. Copy the project to your RaspberryPi.
-2. Plug in power and internet connection to it.
+2. Plug in power and internet connection to it. Make sure you have the [dependencies installed](#dependency).
 3. Setup the circuit and mechanical linkage to you door's latch as shown in the attached diagrams. Scroll down for [circuit diagram](#circuit-diagram).
 4. **[Setup Twitter credentials](#twitter-credentials)** and the control pin (the physical pin which the relay is connected to) in `conf.ini` file.
 5. Start the program by running `sudo ./humbledoor start`. This will begin the program is background. To run the program in foreground use `sudo ./humbledoor start -f`. Log can be found in `logs` directory.
