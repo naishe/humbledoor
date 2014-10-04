@@ -1,7 +1,7 @@
 HUMBLEDOOR
 ----------
 
-This is a simple internet of things (IoT) project that opens the door if you send if you send the right direct message to it.
+This is a simple internet of things (IoT) project that opens the door if you send the right direct message to it. Like in the [Alibaba and The Forty Thieves](http://www.gutenberg.org/files/37679/37679-h/37679-h.htm) story?! Ahem, aaa... yeah, ahem, exacly, yes. Yeah...
 
 ###Quick Start
 
@@ -12,6 +12,8 @@ This is a simple internet of things (IoT) project that opens the door if you sen
 5. Start the program by running `./humbledoor`. This will begin the program is background. To run the program in foreground use `./humbledoor -f`. Log can be found in `logs` directory. [TODO]
 
 All set!
+
+![Alibaba and the fourty thieves](http://i.imgur.com/1tpIohz.jpg)
 
 ###Customizing the Project
 You can customized all the variables of the project by tweaking the `conf.ini` file.
