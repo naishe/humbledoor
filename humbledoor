@@ -15,7 +15,7 @@ if [[ "$(id -u -n)" != "root" ]]; then
 	exit 1
 fi
 
-# Change the next 3 lines to suit where you install your script and what you want to call it
+# Absolute path of the the folder where this script actually is. 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # if used /bin/sh as interpreter this worked
@@ -46,7 +46,7 @@ do_start () {
     if [[ "$1" == "-f" ]] ; then
       echo "Starting is foreground"
       bg_opt=""
-		else
+    else
       echo "Starting in background"
     fi
 
