@@ -83,7 +83,7 @@ Assuming Python is already installed. Install `pip` if you haven't already done 
 
 ###Circuit Diagram
 
-Here is the circuit diagram:
+Here is the circuit diagram (click and zoom the image for clarity. It is SVG, so quality wouldn't deteriorate with zoom in):
 ![Humbledoor Circuit Diagram](https://rawgit.com/naishe/humbledoor/master/humbledoor_bb.svg)
 
 However, I have used a relay PCB with ULN2003 chip which is basically all the top right circuit built in. Here I have joined a couple of images to show what I mean. (Thanks to [Pixlr.com](http://pixlr.com) for free editing):
