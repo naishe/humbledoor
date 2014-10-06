@@ -22,7 +22,7 @@ You can customize all the variables of the project by tweaking the `conf.ini` fi
 
 Everytime the Twitter user whose credential is used in this project receives a direct message, the program does one of the three things:
 
-1. If the incoming message **exactly the same** as the "keyword"[1] in `conf.ini` file, "a pin"[2] is sent HIGH/ON signal for "some time"[3]. A "welcome message"[4] is send to the sender.
+1. If the incoming message **exactly the same** as the "keyword"[1] in `conf.ini` file, "a pin"[2] is sent HIGH/ON signal for "some time"[3]. A "welcome message"[4] is sent to the sender.
 2. If the incoming message matches "a regular expression"[5], the sender is replied with "a tease reply"[6], which is usually a sarcastic comment.
 3. If the incoming message does not match the keyword or the regular expression. "A generic response" [7] is sent.
 
