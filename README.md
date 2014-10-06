@@ -37,9 +37,9 @@ All the information is logged in a "log file"[8] and you can decide the "verbosi
 
 [4] **welcome_msg:** This message is send as a response of successfully opening the door. A welcoming message is a _welcoming message_ that you wanted to welcome your guest with. You can do fun stuffs like sense the temperature and tell the visitor that temperature is 42 degree celcius inside and to take his or her jacket off before entering. But the default messages is, `Welcome to the cavern, my lord. This is your servent Humbledoor.`
 
-[5] **tease_on:** This is a regular expression. If anyone sends a DM that matches to this regular expression (case insensitive) is replied with the text set as teaser_text variable. The defaut is `^open`, so anything that starts with "open" but is not the keyword, is replied with the teaser_text. So, "Open Barley" is not a good idea.
+[5] **tease_on:** This is a regular expression. If anyone sends a DM that matches to this regular expression (case insensitive) is replied with the text set as `teaser_text` variable. The defaut is `^open`, so anything that starts with "open" but is not the keyword, is replied with the `teaser_text`. So, "Open Barley" is not a good idea.
 
-[6] **teaser_text:** A teaser text is, usually, a sarcasmic reply from the door to make a fun experience. The default teaser text is `Is it you, Kasim?`, because you know it is Kasim, in the Alibaba story he is the guy who forgot the keyword, and started trying different grain names but sesame. Please try to not be offensive with because you know, _with great power comes great responsibility_.
+[6] **teaser_text:** A teaser text is, usually, a sarcasmic reply from the door to make a fun experience. The default teaser text is `Is it you, Kasim?`, because you know it is Kasim, in the Alibaba story, who forgot the keyword, and started trying different grain names but sesame. Please try to not be offensive with because you know, _with great power comes great responsibility_.
 
 [7] **ffwd_msg:** Forward message is a message which is like saying I will convey your message. Or just some helpful response like, "Hey, this is Derpina's door. If you wanted to meet her or open her door, _call her maybe_." But the default is a boring reply: `Hey,You have reached to Humbledoor. I will forward your message to my master. Thanks.`
 
