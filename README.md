@@ -15,7 +15,7 @@ This is a simple internet of things (IoT) project that opens the door if you sen
 
 All set!
 
-![Alibaba and the fourty thieves](http://i.imgur.com/q6eFARS.jpg)
+![Alibaba and the fourty thieves](http://i.imgur.com/q6eFARS.jpg)  
 source: [https://www.facebook.com/bizarrocomics](https://www.facebook.com/bizarrocomics)
 
 ###Customizing the Project
