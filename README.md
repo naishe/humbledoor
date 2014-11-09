@@ -15,7 +15,8 @@ This is a simple internet of things (IoT) project that opens the door if you sen
 
 All set!
 
-![Alibaba and the fourty thieves](http://i.imgur.com/1tpIohz.jpg)
+![Alibaba and the fourty thieves](http://i.imgur.com/q6eFARS.jpg)
+source: [https://www.facebook.com/bizarrocomics](https://www.facebook.com/bizarrocomics)
 
 ###Customizing the Project
 You can customize all the variables of the project by tweaking the `conf.ini` file.
